@@ -1,0 +1,42 @@
+[
+  {
+    "thoughtText": "Andromeda is a large constellation in the Northern Hemisphere that is best seen in November. In addition to 'The Chained Maiden', Andromeda is also known as 'The Princess' and 'The Chained Lady.'",
+    "thoughtAuthor": "Andromedae",
+    "title": "Andromeda"
+  },
+  {
+    "thoughtText": "Orion is one of the most distinctive constellations in the sky. It is located along the equator and is best seen during January. It contains Rigel, or Beta Orionis, the seventh-brightest star in the night sky.",
+    "thoughtAuthor": "The Hunter",
+    "title": "Orion"
+  },
+  {
+    "thoughtText": "Pisces is a large constellation in the Northern Hemisphere that is best seen in November. It is one of the constellations of the zodiac and is the last of the 12 signs, after Aquarius and before Aries.",
+    "thoughtAuthor": "Kent Beck",
+    "title": "Pisces"
+  },
+  {
+    "thoughtText": "Taurus is a large constellation in the Northern Hemisphere that is visible in January. Alpha Tauri, traditionally called Aldebaran, is the fourteenth-brightest star in the night sky and represents the eye of the bull. ",
+    "thoughtAuthor": "TaurusLover",
+    "title": "Taurus"
+  },
+  {
+    "thoughtText": "Virgo is the second-largest constellation, barely surpassed by the even-larger Hydra. Virgo is one of the twelve constellations of the zodiac and is visible throughout both hemispheres during May.",
+    "thoughtAuthor": "The Lion",
+    "title": "Virgo"
+  },
+  {
+    "thoughtText": "Hydra is the largest (and the longest) constellation, covering over 3% of the night sky. It is visible throughout much of both hemispheres and is best seen in April.",
+    "thoughtAuthor": "David Thomas",
+    "title": "Hydra"
+  },
+  {
+    "thoughtText": "Sagittarius is a large constellation in the Southern Hemisphere. It is best seen in August, which means it is visible during the summer at northern latitudes and during the winter at southern latitudes.",
+    "thoughtAuthor": "The Archer",
+    "title": "Sagittarius"
+  },  
+  {
+    "thoughtText": "Cancer is located in the Northern Hemisphere and is visible in March. It is a relatively dim constellation since its brightest star is only fourth magnitude.",
+    "thoughtAuthor": "Cancer",
+    "title": "Cancer"
+  }
+]

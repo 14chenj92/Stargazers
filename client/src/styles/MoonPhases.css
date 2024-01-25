@@ -1,0 +1,135 @@
+.inputTitle {
+    color: white;
+}
+
+.dateText {
+     color: black;
+     margin-right: 20px;
+}
+
+.dateBox {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.moonBtn, .starBtn {
+    margin-left: 30px;
+}
+
+.inputTitle {
+    margin-top: 20px;
+}
+
+option {
+    color: black;
+}
+
+.moonimg, .starimg {
+    opacity: 0;
+    animation: transition .75s ease-in-out .75s forwards;
+}
+
+@keyframes transition {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.moonbox {
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: #363238;
+    opacity: 0;
+    animation: transition 1s ease-in-out 1s forwards;
+    margin-bottom: 10%;
+}
+
+.moonbox p {
+    font-family: Nunito;
+    font-size: 18px;
+}
+
+.moontitle {
+    opacity: 0;
+    animation: transition .5s ease-in-out .5s forwards;
+}
+
+.starBack {
+    background-image: url("../images/starrySky.jpeg");
+    background-size: cover;
+    opacity: 0;
+    animation: transition 1s ease-in-out 1s forwards;
+}
+
+.moonButton {
+    position: relative;
+    left: 500px;
+    bottom: 75px;
+}
+
+.starButton {
+    position: relative;
+    left: 500px;
+    bottom: 75px;
+}
+
+.dateSection {
+
+}
+
+#dropdown {
+    margin-right: 20px;
+}
+
+p {
+    font-family: Kalam;
+}
+
+@keyframes transition {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.logIn {
+    background-image: url("../images/starrySky.jpeg");
+    background-size: cover;
+}
+
+.signUp {
+    background-image: url("../images/starrySky.jpeg");
+    background-size: cover;
+}
+
+.userName {
+    background-color: black;
+}
+
+.password {
+    background-color: black;
+}
+
+.email {
+   background-color: black;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-image: url("../images/starrySky.jpeg");
+    background-size: cover;
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
+}

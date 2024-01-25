@@ -1,0 +1,57 @@
+* {
+    /* font-family: Lucida Console; */
+}
+
+body {
+    text-decoration: none;
+    /* background-image: url(../images/stars.jpg); */
+    background-color: black;
+}
+  
+.nav {
+    background-color: rgb(0, 0, 0);
+    font-family: Nunito;
+    font-size: 18px;
+}
+
+.star-icon {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    transition: transform .7s ease-in-out;
+}
+
+
+.navlinks {
+    display: inline-block;
+    list-style: none;
+    color: white;
+    padding: 0 10px;
+    margin: 0 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navlinks:hover .star-icon {
+    transform: rotate(360deg);
+}
+
+.navlinks:hover {
+    color: #be6b0b;
+}
+
+.navlinks:after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #be6b0b;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+
+.navlinks:hover::after{
+    width:100%;
+}

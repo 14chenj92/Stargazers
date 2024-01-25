@@ -1,0 +1,110 @@
+* {
+    color: white;
+}
+
+.upside {
+    position: relative;
+    height: 1000px;
+    right: 80px;
+    opacity: 0.7;
+}
+
+.homepic {
+    margin-top: -100px;
+    height: 1000px;
+    width: 2000px;
+    position: relative;
+    right: 100px;
+    opacity: 0.7;
+}
+  
+.welcome {
+    position: relative;
+    left: 550px;
+    width:300px;
+    color: #fff;
+    padding: 20px;
+}
+
+.explore {
+    position: relative;
+    left: 525px;
+   width:300px;
+    color: #fff;
+    padding: 20px;
+}
+
+.hometext {
+    width:300px;
+    position: relative;
+    left: 500px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.homeCard {
+    background-color: rgb(43, 39, 39);
+    height: 350px;
+    width: 22%;
+    border-radius: 12px;
+    opacity: 0.90;
+}
+
+.cardContainer {
+    position: relative;
+    top: -1000px;
+}
+
+.icon {
+    margin-left: 5px;
+    height: 30px;
+    width: 30px;
+    filter: brightness(0) invert(1);
+    display: none;
+}
+
+.cardTitle {
+    left: 25px;
+    position: relative;
+    font-family: 'Space Mono', monospace;
+    font-size: 28px;
+}
+
+.cardText {
+    font-family: 'Dosis', sans-serif;
+}
+
+.donateField {
+    position: relative;
+    bottom: 120px;
+    font-family: Quicksand;
+    font-size: 24px;
+}
+
+.donateButton {
+    position: relative;
+    top:60px;
+    right:130px
+}
+
+.celestialCosmicBackGround {
+    background-image: url("../images/galaxyNasa.jpeg");
+    background-size: cover;
+}
+
+.d-flex {
+    display: flex!important;
+}
+
+.view {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top: 40px;
+}
+
+.homepageCards {
+    display: flex!important;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,30 @@
+.icons {
+    filter: brightness(0) invert(1);
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    background-color: black;
+    font-size: 30px;
+    margin-left: 25px;
+    margin-top: 70px;
+}
+
+.actuallyAFoot {
+    background-color: black;
+    padding-bottom:20px;
+    color: white;
+}
+
+.socialMedia {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
