@@ -7,20 +7,19 @@ const CommentList = ({ comments = [] }) => {
 
   return (
     <>
-      <h3
-        className="p-5 display-inline-block"
-        style={{ borderBottom: '5px dotted' }}
+      <h2
+        style={{ textAlign: "center", fontSize: "56px" }}
       >
         Comments
-      </h3>
-      <div className="flex-row my-4">
+      </h2>
+      <div className="postBox">
         {comments &&
           comments.map((comment) => (
-            <div key={comment._id} className="col-12 mb-3 pb-3">
-              <div className="p-3 bg-dark text-light">
+            <div key={comment._id} className="col-12">
+              <div className="p-3 text-light">
                 <h5 className="card-header">
                   {comment.commentAuthor} commented{' '}
-                  <span style={{ fontSize: '0.825rem' }}>
+                  <span>
                     on {comment.createdAt}
                   </span>
                 </h5>

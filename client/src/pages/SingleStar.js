@@ -24,22 +24,16 @@ const SingleStar = () => {
     return <div>Loading...</div>;
   }
   return (
-    <div className="my-3">
-      <h3 className="card-header bg-dark text-light p-2 m-0">
+    <div>
+      <h3 className="postBox">
         {thought.thoughtAuthor} <br />
-        <span style={{ fontSize: '1rem' }}>
+        <span>
           saw this star on {thought.createdAt}
         </span>
       </h3>
       <div className="py-4">
         <blockquote
           className="p-4"
-          style={{
-            fontSize: '1.5rem',
-            fontStyle: 'italic',
-            border: '5px dotted',
-            lineHeight: '1.5',
-          }}
         >
           {thought.thoughtText}
         </blockquote>
@@ -48,7 +42,7 @@ const SingleStar = () => {
       <div className="my-5">
         <CommentList comments={thought.comments} />
       </div>
-      <div className="m-3 p-4" style={{ border: '5px dotted' }}>
+      <div className="m-3 p-4">
         <CommentForm thoughtId={thought._id} />
       </div>
     </div>

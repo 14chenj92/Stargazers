@@ -1,75 +1,84 @@
 
-
-.starPage {
-    background-color: black;
-    font-family: 'Quicksand', sans-serif;
+.login-box {
+    background-color: rgba(31, 30, 30, 0.5);
+    border: 1px solid #FDD99F;
+    border-radius: 8px;
+    padding: 2%;
+    margin-top: 5%;
 }
 
 textarea {
     color: black;
+    font-family: var(--main-font);
+    border: 2px solid rgb(200, 200, 200);
+    background-color: white;
+    border-radius: 8px;
+    font-size: 18px;
 }
 
-.addstarBox {
-    border: 10px rgb(216, 49, 49);
+.login-box a {
+    color: #FDD99F;
 }
 
-.starBox {
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-right: 50px;
-    background-color: black;
+.login-box h2 {
+    font-size: 36px;
+}
+
+.starPage h2 {
+    text-align: center;
+    font-size: 56px;
 }
 
 .postBox {
-    border: 3px solid black;
-    margin-bottom: 10px;
-    background-color: #36454f;
+    background-color: rgba(31, 30, 30, 0.5);
+    border: 1px solid #FDD99F;
+    border-radius: 8px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 3%;
+    padding-top: 1%;
+    width: 70%;
+    text-align: center;
+}
+
+.postBox:hover,
+.login-box:hover {
+  border-color: var(--border-color);
+}
+
+.thought-posts {
+    display: flex;
+    justify-content: center;
+}
+
+.postBtn {
+    display: flex;
+    justify-content: center;
 }
 
 .titleBox {
     margin-top: 10px;
-    margin-bottom: 15px;
-    border: 3px solid #695E93;
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 20px;
+    font-family: var(--main-font);
 }
 
 .titleText {
-    font-size: 24px;
-    color: rgb(139, 126, 255);
-}
-
-.usernameText {
-}
-
-.quoteText {
-    font-family: 'Kalam';
+    font-size: 48px;
+    font-family: var(--main-font);
 }
 
 .textBox {
-    color: white;
-    background-color: black;
-    border: 3px solid black;
-    border-left-color: #695E93;
-    border-right-color: #695E93;
-    font-family: 'Kalam';
+    font-family: 'Quicksand';
 }
 
-.postBtn {
-  background-image: radial-gradient(rgba(66, 1, 141, 0.2), #38393b);
-  color: white;
-  border: 0;
-  border-radius: 6px;
-  display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
-  text-align: left;
-  font-size: 18px;
+.comment-box {
+    background-color: rgba(31, 30, 30, 0.5);
+    border: 1px solid #FDD99F;
+    border-radius: 8px;
+    padding: 3%;
 }
 
-.postBtn:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #262944 0 -3px 0 inset;
-  transform: translateY(-1px);
+.comment-box h2 {
+    font-size: 36px;
 }
-
 

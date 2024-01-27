@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
+import "../../styles/StarList.css";
 
 import { ADD_COMMENT } from '../../utils/mutations';
 
@@ -40,13 +41,12 @@ const CommentForm = ({ thoughtId }) => {
   };
 
   return (
-    <div>
-      <h4>What are your thoughts on this star?</h4>
-
+    <div className="comment-box">
+      <h2>What are your thoughts on this star?</h2>
       {Auth.loggedIn() ? (
         <>
           <p
-            className={`m-0 ${
+            className={`mt-3 mb-3 ${
               characterCount === 280 || error ? 'text-danger' : ''
             }`}
           >
@@ -62,14 +62,14 @@ const CommentForm = ({ thoughtId }) => {
                 name="commentText"
                 placeholder="Add your comment..."
                 value={commentText}
-                className="form-input w-100"
+                className="form-input w-50"
                 style={{ lineHeight: '1.5', resize: 'vertical' }}
                 onChange={handleChange}
               ></textarea>
             </div>
 
-            <div className="col-12 col-lg-3">
-              <button className="btn postBtn py-3" type="submit">
+            <div className="col-12 mt-3">
+              <button className="btn" type="submit">
                 Add Comment
               </button>
             </div>

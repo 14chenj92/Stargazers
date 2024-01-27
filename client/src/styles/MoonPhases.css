@@ -1,5 +1,42 @@
-.inputTitle {
-    color: white;
+
+.moonphase-section h2 {
+    font-size: 56px;
+    text-align: center;
+}
+
+.moonbox {
+    border: 1px solid #FDD99F;
+    border-radius: 8px;
+    background-color: rgba(31, 30, 30, 0.5);
+    opacity: 0;
+    animation: transition 1s ease-in-out 1s forwards;
+    margin-bottom: 10%;
+    padding: 4%;
+    display: flex;
+}
+
+.moonbox p {
+    font-family: Nunito;
+    font-size: 18px;
+}
+
+.moonbox-left {
+    width: 40%;
+}
+
+.inputs {
+    width: 50%;
+    margin-right: 5%;
+}
+
+.city-box {
+    display: flex;
+}
+
+.moonbox-right {
+    display: block;
+    text-align: center;
+    width: 65%;
 }
 
 .dateText {
@@ -9,7 +46,6 @@
 
 .dateBox {
     margin-top: 50px;
-    margin-bottom: 30px;
 }
 
 .moonBtn, .starBtn {
@@ -17,75 +53,22 @@
 }
 
 .inputTitle {
-    margin-top: 20px;
-}
-
-option {
-    color: black;
+    margin-top: 4%;
 }
 
 .moonimg, .starimg {
     opacity: 0;
     animation: transition .75s ease-in-out .75s forwards;
-}
-
-@keyframes transition {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-}
-
-.moonbox {
-    border: 1px solid white;
+    height: 350px;
+    width: 275px;
     border-radius: 8px;
-    background-color: #363238;
-    opacity: 0;
-    animation: transition 1s ease-in-out 1s forwards;
-    margin-bottom: 10%;
+    margin: 3%;
+    border: solid 1px #FDD99F;
+    transition: transform 0.3s ease-in-out;
 }
 
-.moonbox p {
-    font-family: Nunito;
-    font-size: 18px;
-}
-
-.moontitle {
-    opacity: 0;
-    animation: transition .5s ease-in-out .5s forwards;
-}
-
-.starBack {
-    background-image: url("../images/starrySky.jpeg");
-    background-size: cover;
-    opacity: 0;
-    animation: transition 1s ease-in-out 1s forwards;
-}
-
-.moonButton {
-    position: relative;
-    left: 500px;
-    bottom: 75px;
-}
-
-.starButton {
-    position: relative;
-    left: 500px;
-    bottom: 75px;
-}
-
-.dateSection {
-
-}
-
-#dropdown {
-    margin-right: 20px;
-}
-
-p {
-    font-family: Kalam;
+.moonimg:hover {
+    transform: scale(1.15);
 }
 
 @keyframes transition {
@@ -97,39 +80,3 @@ p {
     }
 }
 
-.logIn {
-    background-image: url("../images/starrySky.jpeg");
-    background-size: cover;
-}
-
-.signUp {
-    background-image: url("../images/starrySky.jpeg");
-    background-size: cover;
-}
-
-.userName {
-    background-color: black;
-}
-
-.password {
-    background-color: black;
-}
-
-.email {
-   background-color: black;
-}
-
-.modal-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    color: var(--bs-modal-color);
-    pointer-events: auto;
-    background-image: url("../images/starrySky.jpeg");
-    background-size: cover;
-    background-clip: padding-box;
-    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
-    border-radius: var(--bs-modal-border-radius);
-    outline: 0;
-}

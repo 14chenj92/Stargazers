@@ -4,7 +4,7 @@ import {
 } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import '../styles/MoonPhases.css';
+import '../styles/StarCharts.css';
 
 function StarCharts() {
   const [starImage, setStarImage] = useState(null);
@@ -112,27 +112,33 @@ function StarCharts() {
       setConstellation(event.target.value);
       console.log(constellation)
     };
-//     <form className="form">
-//        </form>
+
   return (
-    <div >
-      <h1 className="mt-5 mb-5 moontitle">Generate Star Chart</h1>
-      <Container className=" starBack border">
- 
-      <Form className="emailTwo" onSubmit={handleAddressSubmit}>
-      <Form.Group className="mb-3 mt-3" controlId="formBasicEmail">
-        <Form.Label><p>Address:</p></Form.Label>
-        <Form.Control type="text" placeholder="Enter Address" onChange={handleAddressChange}/>
-        <Form.Text className="text-muted"><p>
-          We'll never share your address with anyone else.</p>
-        </Form.Text>
-      </Form.Group>
-      <Button className="starButton" variant="danger" size="" type="submit">
-        CONVERT
-      </Button>
-      </Form>
+    <div className="starchart-section">
+      <h2 className="mt-5 mb-5">Generate Star Chart</h2>
+      <Container className=" starbox">
+      <div className="starbox-left">
+      <p className="mb-4">Enter your Location.</p>
+        <Form onSubmit={handleAddressSubmit}>
+          <Form.Group className="mb-3 mt-3" controlId="formBasicEmail">
+            <Form.Label>
+              <p>City:</p>
+            </Form.Label>
+            <div className="city-box mb-4">
+            <Form.Control className="inputs"
+              type="text"
+              placeholder="Enter City"
+              onChange={handleAddressChange}
+            />
+            <Button className="moonButton btn-secondary" type="submit">
+              Convert
+            </Button>
+            </div>
+            <p className="mb-5">We'll never share your location with anyone else.</p>
+          </Form.Group>
+        </Form>
       <form className="form">
-        <p className="inputTitle">Longitude:</p>
+        <p className="mt-4 mb-4">Longitude:</p>
         <input className="inputs form-control"
           value={longitude}
           name="longitude"
@@ -141,7 +147,7 @@ function StarCharts() {
           placeholder="Longitude"
         />
         <br></br>
-        <p className="inputTitle">Latitude:</p>
+        <p className="mt-4 mb-4">Latitude:</p>
         <input className="inputs form-control"
           value={latitude}
           name="latitude"
@@ -151,22 +157,25 @@ function StarCharts() {
         />
 
         <div className="dateSection">
-          <label className="dateBox" htmlFor="date"><p>Date:</p></label>
-          <input className="dateText"
+          <label className="dateBox" htmlFor="date"><p>Date:&nbsp;&nbsp;</p></label>
+          <input className="dateText mb-4"
             type="date"
             id="date"
             name="date"
             onChange={handleDateChange}
             required
           />
-          <label htmlFor="dropdown" ><p>Type:</p></label>
+          <div className="star-options mb-2">
+          <label htmlFor="dropdown" ><p>Type:&nbsp;&nbsp;</p></label>
           <select id="dropdown" style={{color: 'black'}} value={starType} onChange={handleStarChange}>
           <option value="">-- Select --</option>
           <option value="area">Area</option>
           <option value="constellation">Constellation</option>
           </select>
-          <label htmlFor="dropdown" ><p>Constellation:</p></label>
-          <select id="dropdown" style={{ color: 'black' }}value={constellation} onChange={handleConstellationChange}>
+          </div>
+          <div className="star-options mb-2">
+          <label htmlFor="dropdown" ><p>Constellation:&nbsp;&nbsp;</p></label>
+          <select id="dropdown" style={{ color: 'black' }} value={constellation} onChange={handleConstellationChange}>
           <option value="">-- Select --</option>
           <option value="and">Andromeda</option><option value="ant">Antlia</option>
           <option value="aps">Apus</option>
@@ -178,11 +187,16 @@ function StarCharts() {
           <option value="cae">Caelum</option>
           <option value="ori">Orion</option>
           </select>
+          </div>
           <button type="button" className="btn btn-secondary postBtn" onClick={getStarCharts}>Generate Image</button>
           </div>
-          </form> 
-        {load ? (<h1>Loading...</h1>) : (<div></div>)}
-        {starImage && <img src={starImage.imageUrl} className="starimg" alt="Star Chart" style={{ width: 800, height: 600 }}/>}
+          </form>
+          </div>
+          <div className="starbox-right">
+        <h2 className="mb-5">Star Chart</h2>
+        {load ? (<h2>Loading...</h2>) : (<div></div>)}
+        {starImage && <img src={starImage.imageUrl} className="starimg" alt="Star Chart" style={{ width: 750, height: 600 }}/>}
+        </div>
     </Container>
     </div>
   );

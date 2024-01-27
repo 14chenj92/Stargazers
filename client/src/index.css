@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
+:root {
+  --main-color: #FDD99F; 
+  --secondary-color: #D1D6FD; 
+  --border-color: #eeaeca;
+  --main-font: "Nunito";
+  --secondary-font: "Poppins";
+  --third-font: "Kalam";
+}
+
 body {
   font-family: 'Rubik', sans-serif;
 }
 
-.small {
-  font-weight: 300;
-  font-style: italic;
+h2 {
+  font-family: Nunito;
+}
+
+p {
+  font-family: Kalam;
 }

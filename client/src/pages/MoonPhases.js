@@ -100,30 +100,30 @@ function MoonPhases() {
 
   return (
     <div className="moonphase-section">
-      <h1 className="mt-5 mb-5 moontitle">Generate Moon Phase</h1>
+      <h2 className="mt-5 mb-5">Generate Moon Phase</h2>
       <Container className="moonbox">
-        <Form className="emailOne" onSubmit={handleAddressSubmit}>
+        <div className="moonbox-left">
+        <p className="mb-4">Enter your Location.</p>
+        <Form onSubmit={handleAddressSubmit}>
           <Form.Group className="mb-3 mt-3" controlId="formBasicEmail">
             <Form.Label>
-              <p>Address:</p>
+              <p>City:</p>
             </Form.Label>
-            <Form.Control
+            <div className="city-box mb-4">
+            <Form.Control className="inputs"
               type="text"
-              placeholder="Enter Address"
+              placeholder="Enter City"
               onChange={handleAddressChange}
-            />{" "}
-            <Button className="moonButton" size="" type="submit">
+            />
+            <Button className="moonButton btn-secondary" type="submit">
               Convert
             </Button>
-            <Form.Text>
-              <p>
-                We'll never share your address with anyone else.
-              </p>
-            </Form.Text>
+            </div>
+            <p className="mb-5">We'll never share your location with anyone else.</p>
           </Form.Group>
         </Form>
         <form className="form">
-          <p className="inputTitle">Longitude:</p>
+          <p className="mt-4 mb-4">Longitude:</p>
           <input
             className="inputs form-control"
             value={longitude}
@@ -132,8 +132,7 @@ function MoonPhases() {
             type="number"
             placeholder="Longitude"
           />
-          <br></br>
-          <p className="inputTitle">Latitude:</p>
+          <p className="mt-4 mb-4">Latitude:</p>
           <input
             className="inputs form-control"
             value={latitude}
@@ -143,7 +142,7 @@ function MoonPhases() {
             placeholder="Latitude"
           />
           <label className="dateBox" htmlFor="date">
-            <p>Date:&nbsp;</p>
+            <p>Date:&nbsp; &nbsp;</p>
           </label>
           <input
             className="dateText"
@@ -155,16 +154,20 @@ function MoonPhases() {
           />
           <button
             type="button"
-            className="btn btn-secondary postBtn"
+            className="btn btn-secondary"
             onClick={getMoonPhases}
           >
             Generate Image
           </button>
         </form>
-        {load ? <h1>Loading...</h1> : <div></div>}
+        </div>
+        <div className="moonbox-right">
+        <h2 className="mb-5">Moon Phase</h2>
+        {load ? <h2>Loading...</h2> : <div></div>}
         {moonImage && (
           <img src={moonImage.imageUrl} className="moonimg" alt="moon phase" />
         )}
+        </div>
       </Container>
     </div>
   );

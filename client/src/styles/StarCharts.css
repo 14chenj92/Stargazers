@@ -1,0 +1,41 @@
+
+.starchart-section h2 {
+    font-size: 56px;
+    text-align: center;
+}
+
+.starbox {
+    border: 1px solid #FDD99F;
+    border-radius: 8px;
+    background-color: rgba(31, 30, 30, 0.5);
+    opacity: 0;
+    animation: transition 1s ease-in-out 1s forwards;
+    margin-bottom: 10%;
+    padding: 4%;
+    display: flex;
+}
+
+.starbox p {
+    font-family: Nunito;
+    font-size: 18px;
+}
+
+.starbox-left {
+    width: 40%;
+}
+
+#dropdown {
+    display: block;
+    margin-bottom: 20px;
+}
+
+option {
+    color: black;
+}
+
+.starbox-right {
+    display: block;
+    text-align: center;
+    width: 65%;
+}
+

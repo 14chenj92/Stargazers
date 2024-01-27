@@ -50,7 +50,6 @@ const Profile = () => {
         {!userParam && (
           <div
             className="col-12 col-md-10 mb-3 p-3"
-            style={{ border: '5px dotted' }}
           >
             <StarForm />
           </div>

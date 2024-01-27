@@ -5,11 +5,12 @@ function HomeCard(props) {
     return (
       <Card className="homeCard mt-4">
         <Card.Body>
-        <h2 className="cardTitle mt-3 mb-3">{props.title}<img src={props.icon} className="icon" alt="icon"/></h2>
-          <Card.Text className="cardText">
+        <img className="homepage-icon" src={ props.icon } alt="star-icon"></img>
+        <h2 className="mt-4 mb-4">{props.title}</h2>
+          <Card.Text>
             {props.description}
           </Card.Text>
-          <Button className="view mt-3 mb-3 postBtn" href={props.link}>
+          <Button className="btn mt-4 mb-4" href={props.link}>
             {"View"}
           </Button>
         </Card.Body>

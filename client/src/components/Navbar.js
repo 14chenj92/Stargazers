@@ -16,65 +16,66 @@ const AppNavbar = () => {
     <>
       <Navbar className="nav" variant='dark' expand='lg'>
         <Container fluid>
-          <Navbar.Brand as={Link} to='/'>
+          <Navbar.Brand className="navtitle"as={Link} to='/'>
+          <img className="star-icon"src={ starIcon } alt="star-icon"></img>
           Stargazers
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar' className='d-flex flex-row-reverse'>
             <Nav className='ml-auto d-flex'>
             <Nav.Link className="navlinks" as={Link} to='/'>
-            <img className="star-icon"src={ starIcon }></img>
+            <img className="star-icon"src={ starIcon } alt="star-icon"></img>
                 Home
               </Nav.Link>
               <Nav.Link className="navlinks" as={Link} to='/stars'>
-              <img className="star-icon"src={ starIcon }></img>
+              <img className="star-icon"src={ starIcon } alt="star-icon"></img>
                 Star Talk
               </Nav.Link>
               <Nav.Link className="navlinks" as={Link} to='/moonphases'>
-              <img className="star-icon"src={ starIcon }></img>
+              <img className="star-icon"src={ starIcon } alt="star-icon"></img>
                 Moon Phases
               </Nav.Link>
               <Nav.Link className="navlinks" as={Link} to='/starcharts'>
-              <img className="star-icon"src={ starIcon }></img>
+              <img className="star-icon"src={ starIcon } alt="star-icon"></img>
                 Star Charts
               </Nav.Link>
               {Auth.loggedIn() ? (
                 <>
                   <Nav.Link className="navlinks" as={Link} to='/me'>
-                  <img className="star-icon"src={ starIcon }></img>
+                  <img className="star-icon"src={ starIcon } alt="star-icon"></img>
                   {Auth.getProfile().data.username}'s Profile
                   </Nav.Link>
                   <Nav.Link className="navlinks" onClick={Auth.logout}>Logout</Nav.Link>
                 </>
               ) : (
                 <>
-                <Nav.Link className="navlinks" onClick={() => setShowModal(true)}><img className="star-icon"src={ starIcon }></img>
+                <Nav.Link className="navlinks" onClick={() => setShowModal(true)}><img className="star-icon"src={ starIcon } alt="star-icon"></img>
                 Login/Signup</Nav.Link>
                 </>
               )}</Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Modal
+      <Modal 
         size='lg'
         show={showModal}
         onHide={() => setShowModal(false)}
         aria-labelledby='signup-modal'>
         {/* tab container to do either signup or login component */}
         <Tab.Container defaultActiveKey='login'>
-          <Modal.Header closeButton>
+          <Modal.Header className="modal-box">
             <Modal.Title id='signup-modal'>
               <Nav variant='pills'>
                 <Nav.Item>
-                  <Nav.Link eventKey='login'>Login</Nav.Link>
+                  <Nav.Link className="modal-button" eventKey='login'>Login</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey='signup'>Sign Up</Nav.Link>
+                  <Nav.Link className="modal-button" eventKey='signup'>Sign Up</Nav.Link>
                 </Nav.Item>
               </Nav>
             </Modal.Title>
           </Modal.Header>
-          <Modal.Body>
+          <Modal.Body className="modal-box">
             <Tab.Content>
               <Tab.Pane eventKey='login'>
                 <LoginForm handleModalClose={() => setShowModal(false)} />

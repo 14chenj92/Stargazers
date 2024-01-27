@@ -13,14 +13,13 @@ const Home = () => {
 
   return (
     <main>
-      <div className="flex-row justify-center starPage">
+      <div className="flex-row justify-center">
         <div
-          className="col-12 col-md-10 mt-3 mb-3 p-3 addstarBox"
-          style={{ border: '5px dotted' }}
+          className="col-12 mt-3 mb-3 p-3"
         >
           <StarForm />
         </div>
-        <div className="col-12 col-md-8 mb-3">
+        <div className="col-12 mb-3">
           {loading ? (
             <div>Loading...</div>
           ) : (

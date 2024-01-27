@@ -69,13 +69,13 @@ const StarForm = () => {
   };
 
   return (
-    <div className="addstarBox">
-      <h3>What stars did you see?</h3>
+    <div className="login-box">
+      <h2>What stars did you see?</h2>
 
       {Auth.loggedIn() ? (
         <>
           <p
-            className={`m-0 ${
+            className={` ${
               characterCount === 280 || error ? 'text-danger' : ''
             }`}
           >
@@ -90,7 +90,7 @@ const StarForm = () => {
                 name="titleText"
                 placeholder="Post your Title..."
                 value={title}
-                className="form-input titletext mb-3"
+                className="form-input mb-4"
                 onChange={handleChange}
               ></textarea>
             </div>
@@ -99,7 +99,7 @@ const StarForm = () => {
                 name="thoughtText"
                 placeholder="Post your description..."
                 value={thoughtText}
-                className="form-input w-100 mb-3"
+                className="form-input w-50 mb-3"
                 style={{ lineHeight: '1.5', resize: 'vertical' }}
                 onChange={handleChange}
               ></textarea>

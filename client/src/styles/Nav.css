@@ -9,7 +9,7 @@ body {
 }
   
 .nav {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(31, 30, 30, 0.5);
     font-family: Nunito;
     font-size: 18px;
 }
@@ -26,7 +26,7 @@ body {
 .navlinks {
     display: inline-block;
     list-style: none;
-    color: white;
+    color: #D1D6FD;
     padding: 0 10px;
     margin: 0 20px;
     cursor: pointer;
@@ -37,15 +37,15 @@ body {
     transform: rotate(360deg);
 }
 
-.navlinks:hover {
-    color: #be6b0b;
+.navlinks:hover, .navtitle:hover {
+    color: #FDD99F;
 }
 
-.navlinks:after{
+.navlinks:after {
     content: '';
     width: 0;
     height: 3px;
-    background: #be6b0b;
+    background: #FDD99F;
     position: absolute;
     left: 0;
     bottom: -10px;
