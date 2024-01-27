@@ -12,7 +12,7 @@ const CommentList = ({ comments = [] }) => {
       >
         Comments
       </h2>
-      <div className="postBox">
+      <div className="container postBox">
         {comments &&
           comments.map((comment) => (
             <div key={comment._id} className="col-12">
@@ -23,7 +23,7 @@ const CommentList = ({ comments = [] }) => {
                     on {comment.createdAt}
                   </span>
                 </h5>
-                <p className="card-body">{comment.commentText}</p>
+                <p className="mt-4 comment-text">{comment.commentText}</p>
               </div>
             </div>
           ))}

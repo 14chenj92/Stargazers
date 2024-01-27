@@ -24,28 +24,28 @@ const SingleStar = () => {
     return <div>Loading...</div>;
   }
   return (
-    <div>
-      <h3 className="postBox">
-        {thought.thoughtAuthor} <br />
-        <span>
-          saw this star on {thought.createdAt}
-        </span>
-      </h3>
-      <div className="py-4">
-        <blockquote
-          className="p-4"
-        >
-          {thought.thoughtText}
-        </blockquote>
+    <>
+    <div className="container postBox">
+    <div key={thought._id} className="mb-4">
+      <div className="titleBox">
+        <div className="titleText">{thought.title}</div>
+        <div className="usernameText">
+          {thought.thoughtAuthor} saw this star on{" "}
+          {thought.createdAt}
+        </div>
       </div>
-
-      <div className="my-5">
+      <div className="textBox p-2 mt-2">
+        <span>{thought.thoughtText}</span>
+      </div>
+    </div>
+  </div>
+      <h2 className="m-3 p-4">
         <CommentList comments={thought.comments} />
-      </div>
+      </h2>
       <div className="m-3 p-4">
         <CommentForm thoughtId={thought._id} />
       </div>
-    </div>
+    </>
   );
 };
 

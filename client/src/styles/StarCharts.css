@@ -24,7 +24,7 @@
     width: 40%;
 }
 
-#dropdown {
+.dropdown {
     display: block;
     margin-bottom: 20px;
 }

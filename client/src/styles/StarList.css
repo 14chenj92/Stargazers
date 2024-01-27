@@ -67,8 +67,9 @@ textarea {
     font-family: var(--main-font);
 }
 
-.textBox {
+.textBox, .comment-text {
     font-family: 'Quicksand';
+    font-size: 20px;
 }
 
 .comment-box {

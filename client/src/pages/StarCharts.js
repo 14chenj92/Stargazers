@@ -167,7 +167,7 @@ function StarCharts() {
           />
           <div className="star-options mb-2">
           <label htmlFor="dropdown" ><p>Type:&nbsp;&nbsp;</p></label>
-          <select id="dropdown" style={{color: 'black'}} value={starType} onChange={handleStarChange}>
+          <select id="con-dropdown" className="dropdown" style={{color: 'black'}} value={starType} onChange={handleStarChange}>
           <option value="">-- Select --</option>
           <option value="area">Area</option>
           <option value="constellation">Constellation</option>
@@ -175,7 +175,7 @@ function StarCharts() {
           </div>
           <div className="star-options mb-2">
           <label htmlFor="dropdown" ><p>Constellation:&nbsp;&nbsp;</p></label>
-          <select id="dropdown" style={{ color: 'black' }} value={constellation} onChange={handleConstellationChange}>
+          <select id="star-dropdown"className="dropdown" style={{ color: 'black' }} value={constellation} onChange={handleConstellationChange}>
           <option value="">-- Select --</option>
           <option value="and">Andromeda</option><option value="ant">Antlia</option>
           <option value="aps">Apus</option>
