@@ -31,6 +31,10 @@ const AppNavbar = () => {
               <img className="star-icon"src={ starIcon } alt="star-icon"></img>
                 Star Talk
               </Nav.Link>
+              <Nav.Link className="navlinks" as={Link} to='/horoscopes'>
+              <img className="star-icon"src={ starIcon } alt="star-icon"></img>
+                Horoscopes
+              </Nav.Link>
               <Nav.Link className="navlinks" as={Link} to='/moonphases'>
               <img className="star-icon"src={ starIcon } alt="star-icon"></img>
                 Moon Phases

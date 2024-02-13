@@ -1,0 +1,15 @@
+.horoscope-section h2 {
+    font-size: 56px;
+    text-align: center;
+}
+
+.horoscope-select {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.zodiac-title {
+    color: white;
+    font-size: 40px;
+}
