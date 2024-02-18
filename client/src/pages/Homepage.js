@@ -29,6 +29,12 @@ const Homepage = () => {
           icon={starTalkIcon}
         />
         <HomeCard
+          title="Horoscopes"
+          description="Enter your zodiac sign and see your horoscope!"
+          link="/horoscopes"
+          icon={starTalkIcon}
+        />
+        <HomeCard
           title="Moon Phases"
           description="Enter your location to see moonphases!"
           link="/moonphases"

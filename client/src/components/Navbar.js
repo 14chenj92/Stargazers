@@ -23,10 +23,6 @@ const AppNavbar = () => {
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar' className='d-flex flex-row-reverse'>
             <Nav className='ml-auto d-flex'>
-            <Nav.Link className="navlinks" as={Link} to='/'>
-            <img className="star-icon"src={ starIcon } alt="star-icon"></img>
-                Home
-              </Nav.Link>
               <Nav.Link className="navlinks" as={Link} to='/stars'>
               <img className="star-icon"src={ starIcon } alt="star-icon"></img>
                 Star Talk

@@ -21,7 +21,7 @@ const StarsBackground = () => {
     }
 
     function createStars() {
-      setInterval(createStar, 2000);
+      setInterval(createStar, 3000);
     }
 
     window.onload = createStars;

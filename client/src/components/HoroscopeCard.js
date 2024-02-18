@@ -1,9 +1,13 @@
 import React from "react";
+import { useState } from 'react'
 import { Card, Button } from 'react-bootstrap';
 import "../styles/Horoscopes.css"
 
 function HoroscopeCard(props) {
+    const [ zodiacSign, setZodiacSign ] = useState("");
+    
     return (
+      <>
       <Card className="homeCard mt-4">
         <Card.Body>
         <img className="homepage-icon" src={ props.icon } alt="zodiac-icon"></img>
@@ -11,11 +15,13 @@ function HoroscopeCard(props) {
           <Card.Text>
             {props.description}
           </Card.Text>
-          <Button className="btn mt-4 mb-4" href={props.link}>
+          <Button className="btn mt-4" href={props.link}>
             {"View"}
           </Button>
         </Card.Body>
       </Card>
+      {zodiacSign ? (<h2>Horoscope Text</h2>) : (<div></div>)}  
+      </>
     );
   }
   
