@@ -26,8 +26,7 @@
 }
 
 .hometext {
-  background-color: rgba(31, 30, 30, 0.5);
-  width: 25%;
+  width: 30%;
   padding-top: 1%;
   border-radius: 8px;
   border: solid 1px var(--main-color);
@@ -35,11 +34,11 @@
 
 .homeCard {
   background-color: rgba(31, 30, 30, 0.5);
-  height: 350px;
-  width: 22%;
+  height: 370px;
   border-radius: 8px;
   border: solid 3px var(--main-color);
   text-align: center;
+  width: 22%;
 }
 
 .homeCard:hover,
@@ -100,6 +99,22 @@
 
 .homepageCards {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 20%;
+  justify-content: space-between;
+  margin-bottom: 15%;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .homepageCards {
+    background-color: rgba(31, 30, 30, 0.5);
+  }
+  .homeCard {
+    height: 330px;
+  }
+  .homeCard h2 {
+    font-size: 20px;
+  }
+  .homeCard p {
+    font-size: 12px;
+  }
 }

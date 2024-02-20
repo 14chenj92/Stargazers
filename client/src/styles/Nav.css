@@ -4,7 +4,6 @@
 
 body {
     text-decoration: none;
-    /* background-image: url(../images/stars.jpg); */
     background-color: black;
 }
   
@@ -34,7 +33,7 @@ body {
 }
 
 .navlinks:hover .star-icon {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
 }
 
 .navlinks:hover, .navtitle:hover {

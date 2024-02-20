@@ -5,6 +5,10 @@ import "../styles/Horoscopes.css"
 
 function HoroscopeCard(props) {
     const [ zodiacSign, setZodiacSign ] = useState("");
+
+    const getSign = () => {
+      setZodiacSign("Leo");
+    };
     
     return (
       <>
@@ -15,12 +19,13 @@ function HoroscopeCard(props) {
           <Card.Text>
             {props.description}
           </Card.Text>
-          <Button className="btn mt-4" href={props.link}>
+          <Button className="btn mt-4" href={props.link}
+          onClick={props.getSign}>
             {"View"}
           </Button>
         </Card.Body>
       </Card>
-      {zodiacSign ? (<h2>Horoscope Text</h2>) : (<div></div>)}  
+      {/* {zodiacSign ? (<h2>Horoscope Text</h2>) : (<div></div>)}   */}
       </>
     );
   }
