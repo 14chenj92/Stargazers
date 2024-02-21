@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import starTalkIcon from "../images/startalk-icon.svg"
 import moonPhaseIcon from "../images/moonphase-icon.svg"
 import starChartIcon from "../images/starchart-icon.svg"
+import horoscopeIcon from "../images/zodiac-icon.svg"
 
 
 const Homepage = () => {
@@ -32,7 +33,7 @@ const Homepage = () => {
           title="Horoscopes"
           description="Enter your zodiac sign and see your horoscope!"
           link="/horoscopes"
-          icon={starTalkIcon}
+          icon={horoscopeIcon}
         />
         <HomeCard
           title="Moon Phases"

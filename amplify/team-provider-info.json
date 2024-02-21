@@ -1,0 +1,23 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify95bb5e8cbd534-staging-03307-authRole",
+      "UnauthRoleArn": "arn:aws:iam::573762285605:role/amplify-amplify95bb5e8cbd534-staging-03307-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::573762285605:role/amplify-amplify95bb5e8cbd534-staging-03307-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplify95bb5e8cbd534-staging-03307-deployment",
+      "UnauthRoleName": "amplify-amplify95bb5e8cbd534-staging-03307-unauthRole",
+      "StackName": "amplify-amplify95bb5e8cbd534-staging-03307",
+      "StackId": "arn:aws:cloudformation:us-east-2:573762285605:stack/amplify-amplify95bb5e8cbd534-staging-03307/c8aebd00-d050-11ee-8328-060dcde022db",
+      "AmplifyAppId": "dyg1bv530ps4g"
+    },
+    "categories": {
+      "api": {
+        "stargazers": {}
+      },
+      "auth": {
+        "stargazersef8957dc": {}
+      }
+    }
+  }
+}
