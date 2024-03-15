@@ -36,29 +36,28 @@ useEffect(() => {
 
   return (
     <>
-    {zodiacSign ? null : (
     <div className="horoscope-section mt-5 mb-5">
       <h2>Select Your Horoscope</h2>
       <div className="horoscope-select">
-        <HoroscopeCard title="Capricorn" description="December 22 - January 19" getSign={getHoroscope}/>
-        <HoroscopeCard title="Aquarius" description="January 20 - February 18"/>
-        <HoroscopeCard title="Pisces" description="February 19 - March 20"/>
+        <HoroscopeCard title="Capricorn" description="Dec 22 - Jan 19" getSign={getHoroscope}/>
+        <HoroscopeCard title="Aquarius" description="Jan 20 - Feb 18"/>
+        <HoroscopeCard title="Pisces" description="Feb 19 - March 20"/>
         <HoroscopeCard title="Aries" description="March 21 - April 19"/>
         <HoroscopeCard title="Taurus" description="April 20 - May 20"/>
         <HoroscopeCard title="Gemini" description="May 21 - June 20"/>
         <HoroscopeCard title="Cancer" description="June 21 - July 22"/>
-        <HoroscopeCard title="Leo" description="July 23 - August 22"/>
-        <HoroscopeCard title="Virgo" description="August 23 - September 22"/>
-        <HoroscopeCard title="Libra" description="September 23 - October 22"/>
-        <HoroscopeCard title="Scorpio" description="October 23 - November 21"/>
-        <HoroscopeCard title="Sagittarius" description="November 22 - December 21"/>
+        <HoroscopeCard title="Leo" description="July 23 - Aug 22"/>
+        <HoroscopeCard title="Virgo" description="Aug 23 - Sept 22"/>
+        <HoroscopeCard title="Libra" description="Sept 23 - Oct 22"/>
+        <HoroscopeCard title="Scorpio" description="Oct 23 - Nov 21"/>
+        <HoroscopeCard title="Sagittarius" description="Nov 22 - Dec 21"/>
       </div>
-      <div>
-        Date: {dateHoroscope}
-        Horoscope:{dailyHoroscope}
+      <div className="horoscope-results">
+        <h3>Horoscope Results</h3>
+        <span>Date: {dateHoroscope}</span>
+        <span>Horoscope:{dailyHoroscope}</span>
       </div>
     </div>
-  )
-}</>)};
+</>)}
 
 export default Horoscopes;

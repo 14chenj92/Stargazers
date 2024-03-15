@@ -20,3 +20,13 @@ h2, h3 {
 p {
   font-family: Kalam;
 }
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 36px;
+  font-family: Assistant;
+  color: var(--main-color);
+}

@@ -11,22 +11,12 @@ function HoroscopeCard(props) {
     };
     
     return (
-      <>
-      <Card className="homeCard mt-4">
-        <Card.Body>
-        <img className="homepage-icon" src={ props.icon } alt="zodiac-icon"></img>
-        <h3 className="zodiac-title mt-4 mb-4">{props.title}</h3>
-          <Card.Text>
-            {props.description}
-          </Card.Text>
-          <Button className="btn mt-4" href={props.link}
-          onClick={props.getSign}>
-            {"View"}
-          </Button>
-        </Card.Body>
-      </Card>
+      <button className="horoscope-card">
+        <img>{props.img}</img>
+        <h4>{props.title}</h4>
+        <p>{props.description}</p>
       {/* {zodiacSign ? (<h2>Horoscope Text</h2>) : (<div></div>)}   */}
-      </>
+      </button>
     );
   }
   

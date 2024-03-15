@@ -6,10 +6,24 @@
 .horoscope-select {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin-top: 2%;
 }
 
-.zodiac-title {
-    color: white;
-    font-size: 40px;
+.horoscope-card {
+    padding: 1%;
+    margin: 1%;
+    max-width: 15%;
+    background-color: black;
+    border: 2px solid var(--main-color);
+}
+
+.horoscope-results {
+    margin-top: 5%;
+}
+
+.horoscope-results span{
+    display: block;
+    font-size: 20px;
+    margin-top: 1%;
 }
