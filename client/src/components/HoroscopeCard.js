@@ -3,15 +3,9 @@ import { useState } from 'react'
 import { Card, Button } from 'react-bootstrap';
 import "../styles/Horoscopes.css"
 
-function HoroscopeCard(props) {
-    const [ zodiacSign, setZodiacSign ] = useState("");
-
-    const getSign = () => {
-      setZodiacSign("Leo");
-    };
-    
+function HoroscopeCard(props) { 
     return (
-      <button className="horoscope-card">
+      <button className="horoscope-card" onClick={props.getSign}>
         <img>{props.img}</img>
         <h4>{props.title}</h4>
         <p>{props.description}</p>

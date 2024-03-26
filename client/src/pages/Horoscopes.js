@@ -8,7 +8,12 @@ const Horoscopes = () => {
   const [dailyHoroscope, setDailyHoroscope] = useState([]);
   const [dateHoroscope, setDateHoroscope] = useState([]);
 
-  const url = `https://horoscope-astrology.p.rapidapi.com/horoscope?day=today&sunsign=capricorn`;
+  useEffect((value) => {
+    getHoroscope();
+    setZodiacSign(value)
+  }, []); 
+
+  const url = `https://horoscope-astrology.p.rapidapi.com/horoscope?day=month&sunsign=${zodiacSign}`;
   const options = {
 	method: 'GET',
 	headers: {
@@ -21,7 +26,7 @@ const getHoroscope = async () => {
 try {
 	const response = await fetch(url, options);
 	const result = await response.json(); 
-	console.log(result.date);
+	console.log(result.horoscope);
   setDateHoroscope(result.date);
   setDailyHoroscope(result.horoscope);
 } catch (error) {
@@ -29,17 +34,13 @@ try {
 }
 }
 
-useEffect(() => {
-    getHoroscope();
-}, []); 
-
 
   return (
     <>
     <div className="horoscope-section mt-5 mb-5">
       <h2>Select Your Horoscope</h2>
       <div className="horoscope-select">
-        <HoroscopeCard title="Capricorn" description="Dec 22 - Jan 19" getSign={getHoroscope}/>
+        <HoroscopeCard title="Capricorn" description="Dec 22 - Jan 19" getSign={getHoroscope} value="leo"/>
         <HoroscopeCard title="Aquarius" description="Jan 20 - Feb 18"/>
         <HoroscopeCard title="Pisces" description="Feb 19 - March 20"/>
         <HoroscopeCard title="Aries" description="March 21 - April 19"/>
