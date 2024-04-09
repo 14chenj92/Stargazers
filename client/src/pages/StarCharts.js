@@ -5,6 +5,7 @@ import {
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import '../styles/StarCharts.css';
+import Loading from "../components/Loading.tsx";
 
 function StarCharts() {
   const [starImage, setStarImage] = useState(null);
@@ -194,7 +195,7 @@ function StarCharts() {
           </div>
           <div className="starbox-right">
         <h2 className="mb-5">Star Chart</h2>
-        {load ? (<h2>Loading...</h2>) : (<div></div>)}
+        {load ? (<Loading/>) : (<div></div>)}
         {starImage && <img src={starImage.imageUrl} className="starimg" alt="Star Chart" style={{ width: 750, height: 600 }}/>}
         </div>
     </Container>

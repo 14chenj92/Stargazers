@@ -29,8 +29,10 @@
     margin-bottom: 20px;
 }
 
-option {
+option, select, input {
     color: black;
+    font-family: var(--main-font);
+    font-weight: bold !important;
 }
 
 .starbox-right {

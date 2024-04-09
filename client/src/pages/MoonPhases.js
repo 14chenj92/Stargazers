@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import Loading from "../components/Loading.tsx";
 
 import "../styles/MoonPhases.css";
 
@@ -163,7 +164,7 @@ function MoonPhases() {
         </div>
         <div className="moonbox-right">
         <h2 className="mb-5">Moon Phase</h2>
-        {load ? <h2>Loading...</h2> : <div></div>}
+        {load ? <Loading/> : <div></div>}
         {moonImage && (
           <img src={moonImage.imageUrl} className="moonimg" alt="moon phase" />
         )}

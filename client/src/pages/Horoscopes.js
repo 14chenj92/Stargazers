@@ -13,7 +13,7 @@ const Horoscopes = () => {
     setZodiacSign(value)
   }, []); 
 
-  const url = `https://horoscope-astrology.p.rapidapi.com/horoscope?day=month&sunsign=${zodiacSign}`;
+  const url = `https://horoscope-astrology.p.rapidapi.com/horoscope?day=month&sunsign=leo`;
   const options = {
 	method: 'GET',
 	headers: {
