@@ -10,8 +10,8 @@ const StarsBackground = () => {
       const star = document.createElement('img');
       star.src = starIcon;
       star.className = 'star';
-      star.style.left = `${Math.random() * 100}vw`;
-      star.style.animationDuration = `${Math.random() * 5 + 1}s`;
+      star.style.left = `${Math.random() * 65}vw`;
+      star.style.animationDuration = `${4}s`;
 
       starsContainer.appendChild(star);
 

@@ -1,5 +1,18 @@
 import { React, useState, useEffect } from "react";
 import HoroscopeCard from "../components/HoroscopeCard";
+import Aquarius from "../images/horoscope/aquarius.png";
+import Aries from "../images/horoscope/aries.png";
+import Cancer from "../images/horoscope/cancer.png";
+import Capricorn from "../images/horoscope/capricorn.png";
+import Gemini from "../images/horoscope/gemini.png";
+import Leo from "../images/horoscope/leo.png";
+import Libra from "../images/horoscope/libra.png";
+import Pisces from "../images/horoscope/pisces.png";
+import Sagittarius from "../images/horoscope/sagittarius.png";
+import Scorpio from "../images/horoscope/scorpio.png";
+import Taurus from "../images/horoscope/taurus.png";
+import Virgo from "../images/horoscope/virgo.png";
+
 
 import "../styles/Horoscopes.css";
 
@@ -40,18 +53,18 @@ useEffect(() => {
     <div className="horoscope-section mt-5 mb-5">
       <h2>Select Your Horoscope</h2>
       <div className="horoscope-select">
-        <HoroscopeCard title="Capricorn" description="December 22 - January 19" getSign={getHoroscope}/>
-        <HoroscopeCard title="Aquarius" description="January 20 - February 18"/>
-        <HoroscopeCard title="Pisces" description="February 19 - March 20"/>
-        <HoroscopeCard title="Aries" description="March 21 - April 19"/>
-        <HoroscopeCard title="Taurus" description="April 20 - May 20"/>
-        <HoroscopeCard title="Gemini" description="May 21 - June 20"/>
-        <HoroscopeCard title="Cancer" description="June 21 - July 22"/>
-        <HoroscopeCard title="Leo" description="July 23 - August 22"/>
-        <HoroscopeCard title="Virgo" description="August 23 - September 22"/>
-        <HoroscopeCard title="Libra" description="September 23 - October 22"/>
-        <HoroscopeCard title="Scorpio" description="October 23 - November 21"/>
-        <HoroscopeCard title="Sagittarius" description="November 22 - December 21"/>
+        <HoroscopeCard title="Capricorn" description="December 23 - January 20" icon={Capricorn} getSign={getHoroscope}/>
+        <HoroscopeCard title="Aquarius" description="January 21 - February 19" icon={Aquarius}/>
+        <HoroscopeCard title="Pisces" description="February 20 - March 20" icon={Pisces}/>
+        <HoroscopeCard title="Aries" description="March 21 - April 20" icon={Aries}/>
+        <HoroscopeCard title="Taurus" description="April 21 - May 21" icon={Taurus}/>
+        <HoroscopeCard title="Gemini" description="May 22 - June 21" icon={Gemini}/>
+        <HoroscopeCard title="Cancer" description="June 22 - July 22" icon={Cancer}/>
+        <HoroscopeCard title="Leo" description="July 23 - August 21" icon={Leo}/>
+        <HoroscopeCard title="Virgo" description="August 22 - September 23" icon={Virgo}/>
+        <HoroscopeCard title="Libra" description="September 24 - October 23" icon={Libra}/>
+        <HoroscopeCard title="Scorpio" description="October 24 - November 22" icon={Scorpio}/>
+        <HoroscopeCard title="Sagittarius" description="November 23 - December 22" icon={Sagittarius}/>
       </div>
       <div>
         Date: {dateHoroscope}
