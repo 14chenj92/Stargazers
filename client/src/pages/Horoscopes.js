@@ -41,7 +41,7 @@ try {
       <h2>Select Your Horoscope</h2>
       <div className="horoscope-select">
         <HoroscopeCard title="Capricorn" description="Dec 22 - Jan 19" getSign={getHoroscope} value="leo"/>
-        <HoroscopeCard title="Aquarius" description="Jan 20 - Feb 18"/>
+        <HoroscopeCard title="Aquarius" description="Jan 20 - Feb 18" />
         <HoroscopeCard title="Pisces" description="Feb 19 - March 20"/>
         <HoroscopeCard title="Aries" description="March 21 - April 19"/>
         <HoroscopeCard title="Taurus" description="April 20 - May 20"/>
