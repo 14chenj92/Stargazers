@@ -10,27 +10,6 @@
 }
 
 .zodiac-title {
-  color: white;
-  font-size: 30px;
-}
-
-.zodiac-icon {
-  height: 180px;
-  width: 180px;
-  filter: hue-rotate(20deg) saturate(120%) brightness(110%);}
-
-.zodiac-icon:hover {
-    filter: saturate(90%) hue-rotate(270deg) brightness(100%);
-}
-
-.zodiac-card {
-  background-color: rgba(31, 30, 30, 0.5);
-  height: 375px;
-  width: 375px;
-  border: solid 3px var(--main-color);
-  text-align: center;
-}
-
-.zodiac-card:hover {
-  border-color: var(--border-color);
+    color: white;
+    font-size: 40px;
 }
