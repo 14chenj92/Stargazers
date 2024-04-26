@@ -41,3 +41,12 @@ option, select, input {
     width: 65%;
 }
 
+.load {
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+}
+
+.load-text {
+    margin-top: 5%;
+}

@@ -39,7 +39,13 @@
   border: solid 3px var(--main-color);
   text-align: center;
   width: 22%;
+  transition: transform 0.3s ease-in-out;
 }
+
+.homeCard:hover {
+  transform: scale(1.05);
+}
+
 
 .homeCard:hover,
 .hometext:hover {

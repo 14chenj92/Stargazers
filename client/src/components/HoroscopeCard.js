@@ -14,13 +14,13 @@ function HoroscopeCard(props) {
             {props.description}
           </Card.Text>
           <Button className="btn mt-2" href={props.link}
-          onClick={props.getSign}>
+          onClick={props.onClick}>
             {"View"}
           </Button>
         </Card.Body>
       </Card>
       {/* {zodiacSign ? (<h2>Horoscope Text</h2>) : (<div></div>)}   */}
-      </button>
+      </>
     );
   }
   

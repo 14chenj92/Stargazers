@@ -13,3 +13,25 @@
     color: white;
     font-size: 40px;
 }
+
+.zodiac-card {
+  background-color: rgba(31, 30, 30, 0.5);
+  height: 20%;
+  border-radius: 8px;
+  border: solid 3px var(--main-color);
+  text-align: center;
+  width: 20%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+}
+
+.zodiac-icon {
+  height: 200px;
+  width: 200px;
+}
+
+.horoscope-results span {
+  display: block;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+}

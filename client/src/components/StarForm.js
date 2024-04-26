@@ -24,7 +24,7 @@ const StarForm = () => {
           data: { thoughts: [addThought, ...thoughts] },
         });
       } catch (e) {
-        console.error(e);
+        console.log("hello")
       }
 
       // update me object's cache
@@ -76,7 +76,7 @@ const StarForm = () => {
         <>
           <p
             className={` ${
-              characterCount === 280 || error ? 'text-danger' : ''
+              characterCount <= 100 || error ? 'text-danger' : ''
             }`}
           >
             Character Count: {characterCount}/280
@@ -110,11 +110,6 @@ const StarForm = () => {
                 Add Star
               </button>
             </div>
-            {error && (
-              <div className="col-12 my-3 bg-danger text-white p-3">
-                {error.message}
-              </div>
-            )}
           </form>
         </>
       ) : (
