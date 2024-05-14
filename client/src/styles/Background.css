@@ -13,11 +13,12 @@
   width: 60px; 
   height: 60px;
   animation: starAnimation linear infinite;
+  animation-iteration-count: 1;
 }
 
 @keyframes starAnimation {
   0% {
-    transform: translateY(0) scale(1);
+    top: -20px;
     opacity: 1;
   }
   100% {

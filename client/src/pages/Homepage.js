@@ -16,9 +16,10 @@ const Homepage = () => {
         <h3> Explore with Us! </h3>
         <div className="homebox">
         <div className="hometext">
-        <p>Discuss your favorite stars with us...</p>
-        <p>Try out our moonphases API...</p>
-        <p>Try out our starcharts API...</p>
+        <p> - Discuss your favorite stars with us - </p>
+        <p> - View your daily horoscope - </p>
+        <p> - View moonphases by location - </p>
+        <p> - View starcharts by constellation - </p>
         </div>
         </div>
         </div>

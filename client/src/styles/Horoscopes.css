@@ -25,13 +25,35 @@
   margin-left: 2.5%;
 }
 
+.zodiac-card:hover {
+  border-color: var(--border-color);
+}
+
 .zodiac-icon {
   height: 200px;
   width: 200px;
+  transition: transform .7s ease-in-out;
+}
+
+.zodiac-icon:hover {
+  transform: rotate(20deg);
+}
+
+.horoscope-results {
+  border: 1px solid #FDD99F;
+  border-radius: 8px;
+  padding: 5%;
+  margin-top: 3%;
+}
+
+.horoscope-results h3 {
+  text-align: center;
+  margin-bottom: 5%;
 }
 
 .horoscope-results span {
   display: block;
   margin-top: 1.5%;
   margin-bottom: 1.5%;
+  font-size: 24px;
 }

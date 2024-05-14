@@ -29,22 +29,30 @@ const Horoscopes = () => {
   }, [zodiacSign]); 
 
 const getHoroscope = async () => {
-  const url = `https://horoscope-astrology.p.rapidapi.com/horoscope?day=month&sunsign=${zodiacSign}`;
+  const url = `https://horoscope19.p.rapidapi.com/get-horoscope/weekly?sign=${zodiacSign}`;
   const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '396d65978cmsh536e29951248595p199c25jsn69e49935a220',
-		'X-RapidAPI-Host': 'horoscope-astrology.p.rapidapi.com'
-	}
-}
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': '396d65978cmsh536e29951248595p199c25jsn69e49935a220',
+      'X-RapidAPI-Host': 'horoscope19.p.rapidapi.com'
+    }
+  };
+//   const url = `https://horoscope-astrology.p.rapidapi.com/horoscope?day=month&sunsign=${zodiacSign}`;
+//   const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '396d65978cmsh536e29951248595p199c25jsn69e49935a220',
+// 		'X-RapidAPI-Host': 'horoscope-astrology.p.rapidapi.com'
+// 	}
+// }
 
 
   try {
 	  const response = await fetch(url, options);
 	  const result = await response.json(); 
-	  console.log(result.horoscope);
-    setDateHoroscope(today.toLocaleDateString());
-    setDailyHoroscope(result.horoscope);
+	  console.log(result.data.horoscope_data);
+    setDateHoroscope(result.data.week); // today.toLocaleDateString()
+    setDailyHoroscope(result.data.horoscope_data);
     if (zodiacSign !== "") {
     resultsRef.current.scrollIntoView({ behavior: "smooth" });
     }
