@@ -22,10 +22,11 @@ const Horoscopes = () => {
   const [dailyHoroscope, setDailyHoroscope] = useState([]);
   const [dateHoroscope, setDateHoroscope] = useState([]);
   const resultsRef = useRef(null);
-  const today = new Date();
+  // const today = new Date();
 
   useEffect((value) => {
     getHoroscope();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [zodiacSign]); 
 
 const getHoroscope = async () => {
