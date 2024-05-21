@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from 'react'
 import { Card, Button } from 'react-bootstrap';
 import "../styles/Horoscopes.css"
 

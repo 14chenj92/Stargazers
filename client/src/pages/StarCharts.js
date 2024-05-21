@@ -78,7 +78,7 @@ function StarCharts() {
       const data = await response.json();
       
       if (data.length > 0) {
-        const dataWeWant = data [0];
+        const dataWeWant = data[0];
         setLongitude(dataWeWant.longitude);
         setLatitude(dataWeWant.latitude);
       }

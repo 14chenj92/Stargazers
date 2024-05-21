@@ -1,37 +1,25 @@
 import React, { useEffect } from 'react';
 import '../styles/Background.css';
-import starIcon from '../images/star-background.svg'; 
 
 const StarsBackground = () => {
   useEffect(() => {
-    const starsContainer = document.querySelector('.stars-container');
+    const numStars = 100;
+    const stars = [];
 
-    function createStar() {
-      const star = document.createElement('img');
-      star.src = starIcon;
+    for (let i = 0; i < numStars; i++) {
+      const star = document.createElement('div');
       star.className = 'star';
-      star.style.left = `${Math.random() * 80}vw`;
-      star.style.animationDuration = `${3}s`;
-
-      starsContainer.appendChild(star);
-
-      star.addEventListener('animationend', () => {
-        star.remove();
-      });
+      star.style.top = `${Math.random() * 100}vh`;
+      star.style.left = `${Math.random() * 100}vw`;
+      star.style.animationDuration = `${2 + Math.random() * 3}s`;
+      stars.push(star);
     }
 
-    function createStars() {
-      setInterval(createStar, 3000);
-    }
-
-    window.onload = createStars;
-
-    return () => {
-      window.onload = null;
-    };
+    const background = document.getElementById('starry-background');
+    stars.forEach(star => background.appendChild(star));
   }, []);
 
-  return <div className="stars-container"></div>;
+  return <div id="starry-background"></div>;
 };
 
 export default StarsBackground;

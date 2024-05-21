@@ -18,7 +18,6 @@ import StarCharts from "./pages/StarCharts";
 import Homepage from "./pages/Homepage";
 
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Horoscopes from "./pages/Horoscopes";
 
 // Construct our main GraphQL API endpoint

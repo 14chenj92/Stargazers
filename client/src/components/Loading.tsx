@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, Flex, Spin, ConfigProvider } from 'antd';
+import { Flex, Spin, ConfigProvider } from 'antd';
 import "../styles/StarCharts.css"
 
 const Loading: React.FC = () => (

@@ -5,7 +5,7 @@ import { useQuery } from '@apollo/client';
 import StarForm from '../components/StarForm';
 import StarList from '../components/StarList';
 
-import { QUERY_USER, QUERY_ME, QUERY_THOUGHTS } from '../utils/queries';
+import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
 import Auth from '../utils/auth';
 
