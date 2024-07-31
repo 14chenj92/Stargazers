@@ -51,4 +51,15 @@
     transform: scale(1.35);
 }
 
+@media (max-width: 766px) {
+    .footer-container {
+        display: block;
+        text-align: center;
+        gap: 10px;
+    }
+    .contact-field {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+}
 

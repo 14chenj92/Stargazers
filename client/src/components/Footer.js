@@ -28,7 +28,7 @@ function Footer() {
           <a
             className="footericon"
             target="blank"
-            href="https://github.com/maxr-e/star-grazers"
+            href="https://github.com/14chenj92/Stargazers"
           >
             <img src={Github} className="icons" alt="github" />
           </a>

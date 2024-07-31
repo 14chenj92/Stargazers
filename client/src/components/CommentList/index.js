@@ -7,8 +7,8 @@ const CommentList = ({ comments = [] }) => {
 
   return (
     <>
-      <h2
-        style={{ textAlign: "center", fontSize: "56px" }}
+      <h2 className="commentTitle"
+        style={{ textAlign: "center" }}
       >
         Comments
       </h2>

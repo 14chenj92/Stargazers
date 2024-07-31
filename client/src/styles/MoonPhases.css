@@ -1,10 +1,10 @@
-
+/* Default styles */
 .moonphase-section h2 {
     font-size: 56px;
     text-align: center;
-}
-
-.moonbox {
+  }
+  
+  .moonbox {
     border: 1px solid #FDD99F;
     border-radius: 8px;
     background-color: rgba(31, 30, 30, 0.5);
@@ -13,56 +13,56 @@
     margin-bottom: 10%;
     padding: 4%;
     display: flex;
-}
-
-.moonbox p {
+  }
+  
+  .moonbox p {
     font-family: Nunito;
     font-size: 18px;
-}
-
-.moonbox-left {
+  }
+  
+  .moonbox-left {
     width: 40%;
-}
-
-.inputs {
+  }
+  
+  .inputs {
     width: 50%;
     margin-right: 5%;
-}
-
-.city-box {
+  }
+  
+  .city-box {
     display: flex;
-}
-
-.moonbox-right {
+  }
+  
+  .moonbox-right {
     display: block;
     text-align: center;
     width: 65%;
-}
-
-.load {
+  }
+  
+  .load {
     display: flex;
     justify-content: center;
     font-size: 40px;
-}
-
-.dateText {
-     color: black;
-     margin-right: 20px;
-}
-
-.dateBox {
+  }
+  
+  .dateText {
+    color: black;
+    margin-right: 20px;
+  }
+  
+  .dateBox {
     margin-top: 50px;
-}
-
-.moonBtn, .starBtn {
+  }
+  
+  .moonBtn, .starBtn {
     margin-left: 30px;
-}
-
-.inputTitle {
+  }
+  
+  .inputTitle {
     margin-top: 4%;
-}
-
-.moonimg, .starimg {
+  }
+  
+  .moonimg {
     opacity: 0;
     animation: transition .75s ease-in-out .75s forwards;
     height: 350px;
@@ -71,33 +71,104 @@
     margin: 3%;
     border: solid 1px #FDD99F;
     transition: transform 0.3s ease-in-out;
-}
 
-.moonimg:hover {
+  }
+  
+  .moonimg:hover {
     transform: scale(1.15);
-}
-
-@keyframes transition {
+  }
+  
+  @keyframes transition {
     0% {
       opacity: 0;
     }
     100% {
       opacity: 1;
     }
-}
-
-.inputs {
+  }
+  
+  .inputs {
     max-width: 190px;
     height: 44px;
     border-radius: .5rem;
     padding: 0 1rem;
     border: 2px solid transparent;
     font-size: 1rem;
-    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s, background .2s cubic-bezier(.25,.01,.25,1) 0s;
   }
   
   .inputs:hover, .inputs:focus, .form:hover .input {
     outline: none;
-    border-color:  var(--main-color);
+    border-color: var(--main-color);
   }
   
+  @media (max-width: 1000px) {
+    .moonbox, .starbox {
+        display: block;
+        margin: 0%;
+    }
+    
+    .moonbox-left, .starbox-left {
+        width: 100%;
+    }
+    
+    .moonbox-right, .starbox-right {
+        width: 100%;
+    }
+
+    .moonbox-right h2, .starbox-right h2 {
+        font-size: 36px;
+        margin-top: 10%;
+    }
+
+    .moonimg {
+        height: 300px;
+        width: 225px;
+    }
+}
+
+@media (max-width: 426px) {
+    h2 {
+        font-size: 40px;
+    }
+    
+    .moonphase-section h2, .starchart-section h2 {
+        font-size: 40px;
+    }
+
+    .moonbox, .starbox {
+        display: block;
+        padding: 2%;
+    }
+
+    .moonbox-left, .moonbox-right, .starbox-left, .starbox-right {
+        width: 100%;
+    }
+
+    .moonbox-right h2, .starbox-right h2 {
+        font-size: 28px;
+        margin-top: 5%;
+    }
+
+    .moonimg {
+        height: 200px;
+        width: 150px;
+        margin: 5% auto;
+    }
+
+    .inputs {
+        width: 80%;
+    }
+
+    .load {
+        font-size: 30px;
+    }
+
+    .dateText {
+        margin-right: 10px;
+    }
+
+    .moonBtn, .starBtn {
+        margin-left: 15px;
+    }
+}

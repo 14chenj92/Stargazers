@@ -1,3 +1,4 @@
+/* Default styles */
 .horoscope-section h2 {
   font-size: 56px;
   text-align: center;
@@ -10,8 +11,8 @@
 }
 
 .zodiac-title {
-    color: white;
-    font-size: 40px;
+  color: white;
+  font-size: 40px;
 }
 
 .zodiac-card {
@@ -56,4 +57,63 @@
   margin-top: 1.5%;
   margin-bottom: 1.5%;
   font-size: 24px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1300px) {
+  .horoscope-section h2 {
+    font-size: 48px;
+  }
+
+  .zodiac-title {
+    font-size: 32px;
+  }
+
+  .zodiac-card {
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  .zodiac-icon {
+    height: 150px;
+    width: 150px;
+  }
+
+  .horoscope-results {
+    padding: 4%;
+  }
+
+  .horoscope-results span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 577px) {
+  .horoscope-section h2 {
+    font-size: 40px;
+  }
+
+  .zodiac-title {
+    font-size: 28px;
+  }
+
+  .zodiac-card {
+    width: 70%;
+    margin: 2.5% auto;
+  }
+
+  .zodiac-icon {
+    height: 100px;
+    width: 100px;
+  }
+
+  .horoscope-results h3{
+    padding: 3%;
+    font-size: 30px;
+  }
+
+  .horoscope-results span {
+    font-size: 16px;
+  }
 }

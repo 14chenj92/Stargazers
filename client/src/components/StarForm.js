@@ -38,7 +38,7 @@ const StarForm = () => {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-
+    window.location.reload();
     try {
       const { data } = await addThought({
         variables: {
@@ -50,7 +50,6 @@ const StarForm = () => {
 
       setThoughtText('');
       setTitle('');
-
     } catch (err) {
       console.error(err);
     }
@@ -74,11 +73,7 @@ const StarForm = () => {
 
       {Auth.loggedIn() ? (
         <>
-          <p
-            className={` ${
-              characterCount <= 100 || error ? 'text-danger' : ''
-            }`}
-          >
+          <p>
             Character Count: {characterCount}/280
           </p>
           <form
@@ -105,7 +100,7 @@ const StarForm = () => {
               ></textarea>
             </div>
 
-            <div className="col-12 col-lg-3">
+            <div className="col-12 col-lg-9">
               <button className="btn postBtn" type="submit">
                 Add Star
               </button>

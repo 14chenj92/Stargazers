@@ -50,3 +50,42 @@ option, select, input {
 .load-text {
     margin-top: 5%;
 }
+
+.starimg {
+        opacity: 0;
+        animation: transition .75s ease-in-out .75s forwards;
+        height: 600px;
+        width: 750px;
+        border-radius: 8px;
+        margin: 3%;
+        border: solid 1px #FDD99F;
+        transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 1440px) {
+    .starimg {
+        height: 400px;
+        width: 550px; 
+    }
+}
+
+@media (max-width: 1000px) {
+    .starimg {
+        height: 400px;
+        width: 90%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .starimg {
+        height: 300px;
+        width: 90%; 
+    }
+}
+
+@media (max-width: 425px) {
+    .starimg {
+        height: 200px;
+        width: 90%; 
+    }
+}
